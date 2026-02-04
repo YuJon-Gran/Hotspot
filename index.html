@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Assignment 2 type shi.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="1" camera-orbit="120.6deg 63.4deg 0.3859m" field-of-view="30deg" auto-rotate>
+      <button class="Hotspot" slot="hotspot-1" data-position="0.03314125643465872m 0.14147804524623298m -0.008145633842048883m" data-normal="0.9867079854856159m 0.1625033888222207m -4.6038254067589677e-7m" data-visibility-attribute="visible" onMouseOver="addhotspot1()" onMouseOut="removehotspot1()">
+          <div class="HotspotAnnotation" id="hotspot1" style="visibility:hidden">Physical UI</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-2" data-position="-0.03003305127779199m 0.1341673430751398m 0.012441792623279099m" data-normal="-0.8614886273317519m 0.11833971087603275m 0.4937945502006183m" data-visibility-attribute="visible" onMouseOver="addhotspot2()" onMouseOut="removehotspot2()">
+          <div class="HotspotAnnotation" id="hotspot2" style="visibility:hidden">Cover Side</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-4" data-position="-0.00621677119971125m 0.007364227734074892m -0.028487424843482864m" data-normal="-0.0794256867281366m 0.5399020588270759m -0.8379721517819363m" data-visibility-attribute="visible"
+onMouseOver="addhotspot4()" onMouseOut="removehotspot4()">
+          <div class="HotspotAnnotation" id="hotspot4" style="visibility:hidden">Claw Holder</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-5" data-position="0.002045929318346573m 0.15524546170719m 0.0010071404965963336m" data-normal="-9.760312768812682e-17m 1m -1.1327425792670447e-16m" data-visibility-attribute="visible"onMouseOver="addhotspot5()" onMouseOut="removehotspot5()">
+          <div class="HotspotAnnotation" id="hotspot5" style="visibility:hidden">Retractable Toothbrush</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-6" data-position="0.021029537911001362m 0.09789679699963497m -0.025114769306167066m" data-normal="0.4792360978976906m 0.04248891667453248m -0.876656976491729m" data-visibility-attribute="visible"onMouseOver="addhotspot6()" onMouseOut="removehotspot6()">
+          <div class="HotspotAnnotation" id="hotspot6" style="visibility:hidden">Brush Side</div>
+      </button>
+
+
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer> 
+
+<script>
+function addhotspot1(){
+document.getElementById("hotspot1").style.visibility="visible"
+}
+function removehotspot1(){
+document.getElementById("hotspot1").style.visibility="hidden";
+}
+
+function addhotspot2(){
+document.getElementById("hotspot2").style.visibility="visible"
+}
+function removehotspot2(){
+document.getElementById("hotspot2").style.visibility="hidden";
+}
+
+
+function addhotspot4(){
+document.getElementById("hotspot4").style.visibility="visible"
+}
+function removehotspot4(){
+document.getElementById("hotspot4").style.visibility="hidden";
+}
+
+function addhotspot5(){
+document.getElementById("hotspot5").style.visibility="visible"
+}
+function removehotspot5(){
+document.getElementById("hotspot5").style.visibility="hidden";
+}
+
+function addhotspot6(){
+document.getElementById("hotspot6").style.visibility="visible"
+}
+function removehotspot6(){
+document.getElementById("hotspot6").style.visibility="hidden";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+ 
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
